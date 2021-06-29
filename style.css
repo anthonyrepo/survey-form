@@ -7,6 +7,16 @@
 #survey-form {
     text-align: center;
 }
+#name-label {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+#email-label {
+
+}
+#number-label {
+
+}
 .center {
     text-align: center;
 }
