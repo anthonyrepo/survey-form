@@ -1,3 +1,9 @@
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
 #title {
 
 }
@@ -8,8 +14,7 @@
     text-align: center;
 }
 #name-label {
-    margin: 0 auto 1.25rem auto;
-    padding: 0.25rem;
+
 }
 #email-label {
 
@@ -19,4 +24,14 @@
 }
 .center {
     text-align: center;
+}
+.group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+.checkbox-group {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
 }

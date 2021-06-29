@@ -17,285 +17,325 @@
             <!--User Story #3-->
             <form id="survey-form">
 
-                <!--User Story #10-->
-                <label id="name-label" for="name">Name</label>
+                <div class="group">
+                    <!--User Story #10-->
+                    <label id="name-label" for="name">Name</label>
 
-                <!--User Story #4-->
-                <!--User Story #11-->
-                <input 
-                    type="text" 
-                    name="name" 
-                    id="name" 
-                    placeholder="Enter your name" 
-                    required
-                />
-
-                <!--User Story #10-->
-                <label id="email-label" for="email">Email</label>
-
-                <!--User Story #5-->
-                <!--User Story #6-->
-                <!--User Story #11-->
-                <input
-                    type="email" 
-                    name="email" 
-                    id="email" 
-                    placeholder="Enter your email" 
-                    required/>
-
-                <!--User Story #10-->
-                <label id="number-label" for="number">Age(must be 21+)</label>
-
-                <!--User Story #7-->
-                <!--User Story #8-->
-                <!--User Story #9-->
-                <!--User Story #11-->
-                <input 
-                    type="number" 
-                    name="age" 
-                    id="number" 
-                    min="21" 
-                    max="120" 
-                    placeholder="Age" 
-                    required
-                />
-                <p>What kind of drinker would you describe yourself as?</p>
-
-                <!--User Story #12-->
-                <select id="dropdown" required>
-                    <option disabled selected value>Select an option</option>
-                    <option value="avid-drinker">Avid Drinker</option>
-                    <option value="occasional-drinker">Occasional Drinker</option>
-                    <option value="rarely-drinks">Rarely Drinks</option>
-                </select>
-                <p>What are some of your favorite beers provided by Brooklyn Brewery?(Check all that apply)</p>
-                
-                <!--User Story #13-->
-                <!--User Story #14-->
-                <label>
-                    <input
-                        name="favorite"
-                        value="brooklyn-lager"
-                        type="checkbox"
-                    />Brooklyn Lager
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="bel-air-sour"
-                        type="checkbox"
-                    />Bel Air Sour
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="the-stonewall-inn-ipa"
-                        type="checkbox"
-                    />The Stonewall Inn IPA
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="special-effects-ipa"
-                        type="checkbox"
-                    />Special Effects IPA
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="pulp-art-hazy-ipa"
-                        type="checkbox"
-                    />Pulp Art Hazy IPA
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="special-effects-hoppy-amber"
-                        type="checkbox"
-                    />Special Effects Hoppy Amber
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="east-ipa"
-                        type="checkbox"
-                    />East IPA
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="Brooklyn Spritz"
-                        type="checkbox"
-                    />Brooklyn Spritz
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="defender-ipa"
-                        type="checkbox"
-                    />Defender IPA
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="brown-ale"
-                        type="checkbox"
-                    />Brown Ale
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="ipa-for-all"
-                        type="checkbox"
-                    />IPA For All
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="shackmeister"
-                        type="checkbox"
-                    />Shackmeister
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value=""
-                        type="checkbox"
+                    <!--User Story #4-->
+                    <!--User Story #11-->
+                    <input 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Enter your name" 
+                        required
                     />
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="bel-air-sour-key-lime"
-                        type="checkbox"
-                    />Bel Air Sour Key Lime
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="brooklyn-summer-ale"
-                        type="checkbox"
-                    />Brooklyn Summer Ale
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="brooklyn-oktoberfest"
-                        type="checkbox"
-                    />Brooklyn Oktoberfest
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="post-road-pumpkin-ale"
-                        type="checkbox"
-                    />Post Road Pumpkin Ale
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="Brooklyn Winter Lager"
-                        type="checkbox"
-                    />Brooklyn Winter Lager
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="halfing"
-                        type="checkbox"
-                    />Halfing
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="brooklyn-to-tokyo-yuzu-sour"
-                        type="checkbox"
-                    />Brooklyn To Tokyo Yuzu Sour
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="black-chocolate-stout-with-toasted-coconut"
-                        type="checkbox"
-                    />Black Chocolate Stout With Toasted Coconut
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="palenque"
-                        type="checkbox"
-                    />Palenque
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="black-is-beautiful"
-                        type="checkbox"
-                    />Black Is Beautiful
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="butterfly-photobomb-dipa"
-                        type="checkbox"
-                    />Butterfly Photobomb DIPA
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="boundary-spell"
-                        type="checkbox"
-                    />Boundary Spell
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="total-request-ipa"
-                        type="checkbox"
-                    />Total Request IPA
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="black-chocolate-stout"
-                        type="checkbox"
-                    />Black Chocolate Stout
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="black-ops"
-                        type="checkbox"
-                    />Black Ops
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="capataz"
-                        type="checkbox"
-                    />Capataz
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="cloaking-device"
-                        type="checkbox"
-                    />Cloaking Device
-                </label>
-                <label>
-                    <input
-                        name="favorite"
-                        value="hand-&-seal"
-                        type="checkbox"
-                    />Hand & Seal
-                </label>
-                <p>Any and all comments are appreciated!</p>
+                </div>
 
-                <!--User Story #15-->
-                <textarea placeholder="Enter your comment here..."></textarea>
+                <div class="group">
 
-                <!--User Story #16-->
-                <button type="submit" id="submit">Submit</button>
+                    <!--User Story #10-->
+                    <label id="email-label" for="email">Email</label>
+
+                    <!--User Story #5-->
+                    <!--User Story #6-->
+                    <!--User Story #11-->
+                    <input
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Enter your email" 
+                        required/>
+                </div>
+
+                <div class="group">
+                
+                    <!--User Story #10-->
+                    <label id="number-label" for="number">Age(must be 21+)</label>
+                
+                    <!--User Story #7-->
+                    <!--User Story #8-->
+                    <!--User Story #9-->
+                    <!--User Story #11-->
+                    <input
+                        type="number" 
+                        name="age" 
+                        id="number" 
+                        min="21" 
+                        max="120" 
+                        placeholder="Age" 
+                        required
+                    />
+                </div>
+
+                <div class="group">
+                    <p>What kind of drinker would you describe yourself as?</p>
+
+                    <!--User Story #12-->
+                    <select id="dropdown" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="avid-drinker">Avid Drinker</option>
+                        <option value="occasional-drinker">Occasional Drinker</option>
+                        <option value="rarely-drinks">Rarely Drinks</option>
+                    </select>
+                </div>
+
+                <div class="group">
+                    <p>What are some of your favorite beers provided by Brooklyn Brewery?(Check all that apply)</p>
+                
+                    <!--User Story #13-->
+                    <!--User Story #14-->
+                    <label>
+                        <input
+                            name="favorite"
+                            value="brooklyn-lager"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Brooklyn Lager
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="bel-air-sour"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Bel Air Sour
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="the-stonewall-inn-ipa"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />The Stonewall Inn IPA
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="special-effects-ipa"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Special Effects IPA
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="pulp-art-hazy-ipa"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Pulp Art Hazy IPA
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="special-effects-hoppy-amber"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Special Effects Hoppy Amber
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="east-ipa"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />East IPA
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="Brooklyn Spritz"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Brooklyn Spritz
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="defender-ipa"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Defender IPA
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="brown-ale"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Brown Ale
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="ipa-for-all"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />IPA For All
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="shackmeister"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Shackmeister
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="bel-air-sour-key-lime"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Bel Air Sour Key Lime
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="brooklyn-summer-ale"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Brooklyn Summer Ale
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="brooklyn-oktoberfest"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Brooklyn Oktoberfest
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="post-road-pumpkin-ale"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Post Road Pumpkin Ale
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="Brooklyn Winter Lager"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Brooklyn Winter Lager
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="halfing"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Halfing
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="brooklyn-to-tokyo-yuzu-sour"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Brooklyn To Tokyo Yuzu Sour
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="black-chocolate-stout-with-toasted-coconut"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Black Chocolate Stout With Toasted Coconut
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="palenque"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Palenque
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="black-is-beautiful"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Black Is Beautiful
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="butterfly-photobomb-dipa"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Butterfly Photobomb DIPA
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="boundary-spell"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Boundary Spell
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="total-request-ipa"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Total Request IPA
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="black-chocolate-stout"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Black Chocolate Stout
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="black-ops"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Black Ops
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="capataz"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Capataz
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="cloaking-device"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Cloaking Device
+                    </label>
+                    <label>
+                        <input
+                            name="favorite"
+                            value="hand-&-seal"
+                            type="checkbox"
+                            class="checkbox-group"
+                        />Hand & Seal
+                    </label>
+                </div>
+
+                <div class="group">
+                    <p>Any and all comments are appreciated!</p>
+
+                    <!--User Story #15-->
+                    <textarea placeholder="Enter your comment here..."></textarea>
+
+                    <!--User Story #16-->
+                    <button type="submit" id="submit">Submit</button>
+                </div>
             </form>
         </main>
     </body>
