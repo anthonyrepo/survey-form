@@ -1,8 +1,32 @@
+body {
+    background-color: #009844;
+}
 label {
     display: flex;
     align-items: center;
     font-size: 1.125rem;
     margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+h1 {
+    font-family: Impact;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 500%;
+}
+p {
+    font-family: Calibri;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+input {
+    display: inline-block;
+    font-family: Calibri;
+    font-size: 18px;
+}
+select {
+    font-family: Calibri;
+    font-size: 18px;
 }
 #title {
 
@@ -11,7 +35,13 @@ label {
 
 }
 #survey-form {
-    text-align: center;
+    /*text-align: center;*/
+    /*background-color: #009844;*/
+    /*padding: 10rem;*/
+    margin: auto;
+    width: 70%;
+    padding: 40px;
+    background-color: #000000;
 }
 #name-label {
 
@@ -22,10 +52,26 @@ label {
 #number-label {
 
 }
+
+/*User Story #12*/
+#dropdown {
+    cursor: pointer;
+}
+
+/*User Story #16*/
+#submit {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family: Calibri;
+    font-size: 18px;
+}
 .center {
     text-align: center;
 }
 .group {
+    display: inline;
     margin: 0 auto 1.25rem auto;
     padding: 0.25rem;
 }
@@ -34,4 +80,41 @@ label {
     margin-right: 0.625rem;
     min-height: 1.25rem;
     min-width: 1.25rem;
+    cursor: pointer;
+}
+.wide-input {
+    display: block;
+    width: 100%;
+    height: 1.75rem;
+    padding: 0.15rem 0.75rem;
+    color: #000000;
+    background-color: #fff;
+}
+.textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    font-family: Calibri;
+    font-size: 18px;
+}
+.input-radio {
+    cursor: pointer;
+}
+.emblem {
+    /*border: 1px solid #ddd;*/
+    display: inline-block;
+    border-radius: 4px;
+    max-width: 35%;
+    height: auto;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+.option {
+    display: inline-block;
+    margin: 10px;
 }
