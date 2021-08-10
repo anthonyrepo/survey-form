@@ -2,11 +2,13 @@ body {
     background-color: #009844;
 }
 label {
-    display: flex;
-    align-items: center;
     font-size: 1.125rem;
-    margin-bottom: 0.5rem;
     color: #FFFFFF;
+    display: flex;
+}
+span {
+    display: inline-block;
+    width: 40%;
 }
 h1 {
     font-family: Impact;
@@ -35,9 +37,6 @@ select {
 
 }
 #survey-form {
-    /*text-align: center;*/
-    /*background-color: #009844;*/
-    /*padding: 10rem;*/
     margin: auto;
     width: 70%;
     padding: 40px;
@@ -101,14 +100,13 @@ select {
     cursor: pointer;
 }
 .emblem {
-    /*border: 1px solid #ddd;*/
     display: inline-block;
     border-radius: 4px;
-    max-width: 35%;
+    max-width: 90%;
     height: auto;
 }
 .container {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto 1.25rem auto;
@@ -117,4 +115,11 @@ select {
 .option {
     display: inline-block;
     margin: 10px;
+}
+.label-class {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
 }
