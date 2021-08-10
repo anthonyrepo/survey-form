@@ -30,18 +30,41 @@ select {
     font-family: Calibri;
     font-size: 18px;
 }
+
+/*User Story #1*/
 #title {
 
 }
+
+/*User Story #2*/
 #description {
 
 }
+
+/*User Story #3*/
 #survey-form {
     margin: auto;
     width: 70%;
     padding: 10px 40px;
     background-color: #000000;
 }
+
+/*User Story #4*/
+#name {
+
+}
+
+/*User Story #5*/
+#email {
+
+}
+
+/*User Story 7*/
+#number {
+
+}
+
+/*User Story 10*/
 #name-label {
 
 }
