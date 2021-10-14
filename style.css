@@ -31,64 +31,6 @@ select {
     font-size: 18px;
 }
 
-/*User Story #1*/
-#title {
-
-}
-
-/*User Story #2*/
-#description {
-
-}
-
-/*User Story #3*/
-#survey-form {
-    margin: auto;
-    width: 70%;
-    padding: 10px 40px;
-    background-color: #000000;
-}
-
-/*User Story #4*/
-#name {
-
-}
-
-/*User Story #5*/
-#email {
-
-}
-
-/*User Story 7*/
-#number {
-
-}
-
-/*User Story 10*/
-#name-label {
-
-}
-#email-label {
-
-}
-#number-label {
-
-}
-
-/*User Story #12*/
-#dropdown {
-    cursor: pointer;
-}
-
-/*User Story #16*/
-#submit {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    cursor: pointer;
-    font-family: Calibri;
-    font-size: 18px;
-}
 .center {
     text-align: center;
 }
@@ -146,4 +88,46 @@ select {
     margin-bottom: 0.5rem;
     color: #FFFFFF;
     font-family: Calibri;
+}
+
+#title {
+
+}
+#description {
+
+}
+#survey-form {
+    margin: auto;
+    width: 70%;
+    padding: 10px 40px;
+    background-color: #000000;
+}
+#name {
+
+}
+#email {
+
+}
+#number {
+
+}
+#name-label {
+
+}
+#email-label {
+
+}
+#number-label {
+
+}
+#dropdown {
+    cursor: pointer;
+}
+#submit {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family: Calibri;
+    font-size: 18px;
 }
