@@ -1,427 +1,443 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
         <title>Booklyn Brewery Survey Form</title>
     </head>
     <body>
         <main>
-            <div class="center">
-                <h1 id="title">Brooklyn Brewery Survey</h1>
-                <p id="description">Help Brooklyn Brewery improve our beer line up!</p>
-            </div>
+            <h1 class="text-center">Brooklyn Brewery Survey</h1>
+            <p class="text-center">Help Brooklyn Brewery improve our beer line up!</p>
             <form id="survey-form">
-                <div class="group">
-                    <label id="name-label" class="label-class" for="name">Name</label>
-                    <input 
-                        type="text" 
-                        name="name" 
-                        id="name" 
-                        class="wide-input"
-                        placeholder="Enter your name" 
-                        required
-                    />
-                </div>
-                <div class="group">
-                    <label id="email-label" class="label-class" for="email">Email</label>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
                     <input
-                        type="email" 
-                        name="email" 
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter name"
+                    >
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                        type="email"
+                        class="form-control"
                         id="email"
-                        class="wide-input"
-                        placeholder="Enter your email" 
-                        required/>
+                        placeholder="Enter your email"
+                    >
                 </div>
-                <div class="group">
-                    <label id="number-label" class="label-class" for="number">Age(must be 21+)</label>
+                <div class="mb-3">
+                    <label for="number" class="form-label">Age</label>
                     <input
-                        type="number" 
-                        name="age" 
-                        id="number" 
-                        min="21" 
+                        type="number"
+                        class="form-control"
+                        id="number"
+                        min="21"
                         max="120"
-                        class="wide-input"
-                        placeholder="Age" 
+                        placeholder="Age"
+                        aria-describedby="ageHelp"
                         required
-                    />
+                    >
+                    <div id="ageHelp" class="form-text">Must be 21+</div>
                 </div>
-                <div class="group">
-                    <p>What kind of drinker would you describe yourself as?</p>
-                    <select id="dropdown" class="wide-input" required>
-                        <option disabled selected value>Select an option</option>
+                <div class="mb-3">
+                    <label for="select" class="form-label">What kind of drinker would you describe yourself as?</label>
+                    <select id="select" class="form-select">
                         <option value="avid-drinker">Avid Drinker</option>
                         <option value="occasional-drinker">Occasional Drinker</option>
                         <option value="rarely-drinks">Rarely Drinks</option>
                     </select>
                 </div>
-                <div class="container">
-                    <p>What are some of your favorite beers provided by Brooklyn Brewery?(Check all that apply)</p>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="brooklyn-lager"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Brooklyn Lager
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/brooklyn-lager/" target="blank">
+                <p>What are some of your favorite beers provided by Brooklyn Brewery?(Check all that apply)</p>
+                <div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-lager" type="checkbox" id="optionBrooklynLager"/>
+                            <label class="form-check-label" for="optionBrooklynLager">Brooklyn Lager</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/brooklyn-lager/" target="_blank">
                             <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/08/BB1-632x828.png"
+                                src="./img/2020-lager_12ozBottle_LR-366x600-eba0ee3.png"
                                 alt="Brooklyn Lager"
-                                class="emblem"
                             >
                         </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="the-stonewall-inn-ipa"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />The Stonewall Inn IPA
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/the-stonewall-inn-ipa/" target="_blank">
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="black-chocolate-stout-with-toasted-coconut" type="checkbox" id="optionBlackChocolateStoutwithToastedCoconut"/>
+                            <label class="form-check-label" for="optionBlackChocolateStoutwithToastedCoconut">Black Chocolate Stout with Toasted Coconut</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/black-chocolate-stout-with-toasted-coconut/" target="_blank">
                             <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/09/DSC9664_web-632x828.jpg"
-                                alt="The Stonewall Inn IPA"
-                                class="emblem"
+                                src="./img/BCS Toasted Coconut 16oz Can lo res-269x602-2baf991.png"
+                                alt="Black Chocolate Stout with Toasted Coconut"
                             >
                         </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="special-effects-ipa"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Special Effects IPA
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/non-alcoholic/special-effects-ipa/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2020/12/IPA-POUR-CHEESE-TALENT_web-632x828.jpg"
-                                alt="Special Effects IPA"
-                                class="emblem"
-                            >
-                        </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="special-effects-hoppy-amber"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Special Effects Hoppy Amber
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/non-alcoholic/special-effects-hoppy-amber/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/08/special_effects_img@2x-1-632x828.jpg"
-                                alt="Special Effects Hazy IPA"
-                                class="emblem"
-                            >
-                        </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="pulp-art-hazy-ipa"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Pulp Art Hazy IPA
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/pulp-art-hazy-ipa/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2021/02/02102021-BROOKLYN_BREWERY_CHELSEA_KYLE_13305_WEB-632x828.jpg"
-                                alt="Pulp Art Hazy IPA"
-                                class="emblem"
-                            >
-                        </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="bel-air-sour-key-lime"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Bel Air Sour Key Lime
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/seasonals/bel-air-sour-key-lime/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2020/12/BEL-AIR-BAR-TOP-PINEAPPLE_web-684x1024.jpg"
-                                alt="Bel Air Sour Key Lime"
-                                class="emblem"
-                                width="632"
-                                height="828"
-                            >
-                        </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="bel-air-sour"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Bel Air Sour
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/bel-air-sour/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/07/BelAir@2x-828x1024.jpg"
-                                alt="Bel Air Sour"
-                                class="emblem"
-                                width="632"
-                                height="828"
-                            >
-                        </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="butterfly-photobomb-dipa"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Butterfly Photobomb DIPA
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/butterfly-photobomb/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2020/07/LS6A4117-819x1024.jpg"
-                                alt="Butterfly Photobomb DIPA"
-                                class="emblem"
-                                width="632"
-                                height="828"
-                            >
-                        </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="brooklyn-halfling"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Brooklyn Halfling
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/halfling/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2020/10/LS6A4283-683x1024.jpg"
-                                alt="Brooklyn Halfling"
-                                class="emblem"
-                                width="632"
-                                height="828"
-                            >
-                        </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="brooklyn-shackmeister-ale"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Brooklyn Shackmeister Ale
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/shackmeister/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/11/beer-1@2x-828x1024.jpg"
-                                alt="Brooklyn Shackmeister Ale"
-                                class="emblem"
-                                width="632"
-                                height="828"
-                            >
-                        </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="brooklyn-oktoberfest"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Brooklyn Oktoberfest
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/seasonals/brooklyn-oktoberfest/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/10/beer-1@2x-5-828x1024.jpg"
-                                alt="Brooklyn Oktoberfest"
-                                class="emblem"
-                                width="632"
-                                height="828"
-                            >
-                        </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="east-ipa"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Brooklyn East IPA
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/east-ipa/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/08/east1@1x-632x828.jpg"
-                                alt="East IPA"
-                                class="emblem"
-                            >
-                        </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="black-chocolate-stout"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Black Chocoalte Stout
-                        </label>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="black-chocolate-stout" type="checkbox" id="optionBlackChocolateStout"/>
+                            <label class="form-check-label" for="optionBlackChocolateStout">Black Chocolate Stout</label>
+                        </div>
                         <a href="https://brooklynbrewery.com/brooklyn-beers/limited/black-chocolate-stout/" target="_blank">
                             <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/10/beer-1@3x-2-828x1024.jpg"
+                                src="./img/BCS-2021-12ozBottle_LR-366x600-eba0ee3.png"
                                 alt="Black Chocolate Stout"
-                                class="emblem"
-                                width="632"
-                                height="828"
                             >
                         </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="post-road-pumpkin-ale"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Post Road Pumpkin Ale
-                        </label>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-bel-air-sour" type="checkbox" id="optionBrooklynBelAirSour"/>
+                            <label class="form-check-label" for="optionBrooklynBelAirSour">Brooklyn Bel Air Sour</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/bel-air-sour/" target="_blank">
+                            <img
+                                src="./img/BelAir-2020-12ozBottle_LR-366x600-eba0ee3.png"
+                                alt="Brooklyn Bel Air Sour"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="bel-air-sour-key-lime" type="checkbox" id="optionBelAirSourKey-Lime"/>
+                            <label class="form-check-label" for="optionBelAirSourKey-Lime">Bel Air Sour Key Lime</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/seasonals/bel-air-sour-key-lime/" target="_blank">
+                            <img
+                                src="./img/BelAir-KEYLIME-12ozBottle_LR-366x600-eba0ee3.png"
+                                alt="Bel Air Sour Key Lime"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-hard-seltzer-black-cherry-apricot" type="checkbox" id="optionBrooklynHardSeltzerBlackCherryApricot"/>
+                            <label class="form-check-label" for="optionBrooklynHardSeltzerBlackCherryApricot">Brooklyn Hard Seltzer Black Cherry Apricot</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/brooklyn-hard-seltzer/" target="_blank">
+                            <img
+                                src="./img/BkHardSeltzer-BlackCherryApricot-LR-255x600-82807a2.png"
+                                alt="Brooklyn Hard Seltzer Black Cherry Apricot"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-hard-seltzer-grapefruit" type="checkbox" id="optionBrooklynHardSeltzerGrapefruit"/>
+                            <label class="form-check-label" for="optionBrooklynHardSeltzerGrapefruit">Brooklyn Hard Seltzer Grapefruit</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/brooklyn-hard-seltzer/" target="_blank">
+                            <img
+                                src="./img/BkHardSeltzer-grapefruit-LR-255x600-82807a2.png"
+                                alt="Brooklyn Hard Seltzer Grapefruit"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-hard-seltzer-lemon-cloudberry" type="checkbox" id="optionBrooklynHardSeltzerLemonCloudberry"/>
+                            <label class="form-check-label" for="optionBrooklynHardSeltzerLemonCloudberry">Brooklyn Hard Seltzer Lemon Cloudberry</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/brooklyn-hard-seltzer/" target="_blank">
+                            <img
+                                src="./img/BkHardSeltzer-LemonCloudberry-LR-255x600-82807a2.png"
+                                alt="Brooklyn Hard Seltzer Lemon Cloudberry"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-hard-seltzer-mango" type="checkbox" id="optionBrooklynHardSeltzerMango"/>
+                            <label class="form-check-label" for="optionBrooklynHardSeltzerMango">Brooklyn Hard Seltzer Mango</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/brooklyn-hard-seltzer/" target="_blank">
+                            <img
+                                src="./img/BkHardSeltzer-mango-LR-255x600-82807a2.png"
+                                alt="Brooklyn Hard Seltzer Mango"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="black-is-beautiful" type="checkbox" id="optionBlackIsBeautiful"/>
+                            <label class="form-check-label" for="optionBlackIsBeautiful">Black is Beautiful</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/black-is-beautiful/" target="_blank">
+                            <img
+                                src="./img/Black Is Beautiful Rendering-500x601-1ccff0e.png"
+                                alt="Black is Beautiful"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-black-ops-four-roses" type="checkbox" id="optionBrooklynBlackOpsFourRoses"/>
+                            <label class="form-check-label" for="optionBrooklynBlackOpsFourRoses">Brooklyn Black Ops Four Roses</label>
+                        </div>
+                        <a href="" target="_blank">
+                            <img
+                                src="./img/BlackOps-4Roses-can_LR-451x601-3a95a2d.png"
+                                alt="Brooklyn Black Ops Four Roses"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-blame-the-'gram" type="checkbox" id="optionBrooklynBlameThe'Gram"/>
+                            <label class="form-check-label" for="optionBrooklynBlameThe'Gram">Brooklyn Blame the 'Gram</label>
+                        </div>
+                        <img
+                            src="./img/BlameTheGram-16oz-can_1_LR-451x601-3a95a2d.png"
+                            alt="Brooklyn Blame The 'Gram"
+                        >
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-blast!" type="checkbox" id="optionBrooklynBlast!"/>
+                            <label class="form-check-label" for="optionBrooklynBlast!">Brooklyn Blast!</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/blast/" target="_blank">
+                            <img
+                                src="./img/Blast-16oz-can_LR-451x601-3a95a2d.png"
+                                alt="Brooklyn Blast!"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="bodega-run-ipa" type="checkbox" id="optionBodegaRunIPA"/>
+                            <label class="form-check-label" for="optionBodegaRunIPA">Bodega Run IPA</label>
+                        </div>
+                        <img
+                            src="./img/BodegaRun-12ozBottle_LR-366x600-eba0ee3.png"
+                            alt="Bodega Run IPA"
+                        >
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-to-tokyo-yuzu-sour" type="checkbox" id="optionBrooklynToTokyoYuzuSour"/>
+                            <label class="form-check-label" for="optionBrooklynToTokyoYuzuSour">Brooklyn To Tokyo Yuzu Sour</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/brooklyn-to-tokyo-yuzu-sour/" target="_blank">
+                            <img
+                                src="./img/Brooklyn to Tokyo rendering lo res-500x601-1ccff0e.png"
+                                alt="Brooklyn To Tokyo Yuzu Sour"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="butterfly-photobomb-ipa" type="checkbox" id="optionButterflyPhotobombIPA"/>
+                            <label class="form-check-label" for="optionButterflyPhotobombIPA">Butterfly Photobomb IPA</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/butterfly-photobomb/" target="_blank">
+                            <img
+                                src="./img/ButterflyPhotobomb-pint-can_LR-451x601-3a95a2d.png"
+                                alt="Butterfly Photobomb IPA"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="defender-ipa" type="checkbox" id="optionDefenderIPA"/>
+                            <label class="form-check-label" for="optionDefenderIPA">Defender IPA</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/defender-ipa/" target="_blank">
+                            <img
+                                src="./img/Defender-12oz-LR-366x600-eba0ee3.png"
+                                alt="Defender IPA"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="east-ipa" type="checkbox" id="optionEastIPA"/>
+                            <label class="form-check-label" for="optionEastIPA">East IPA</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/east-ipa/" target="_blank">
+                            <img
+                                src="./img/EastIPA_12oz_bottle_LR-366x600-eba0ee3.png"
+                                alt="East IPA"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-halfling" type="checkbox" id="optionBrooklynHalfling"/>
+                            <label class="form-check-label" for="optionBrooklynHalfling">Brooklyn Halfling</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/halfling/" target="_blank">
+                            <img
+                                src="./img/halfling 16oz can lo res-360x600-cf8b321.png"
+                                alt="Brooklyn Halfling"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="local-1" type="checkbox" id="optionLocal1"/>
+                            <label class="form-check-label" for="optionLocal1">Local 1</label>
+                        </div>
+                        <img
+                            src="./img/Local1-BigBottle-LR-307x600-f81c34d.png"
+                            alt="Local 1"
+                        >
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-oktoberfest" type="checkbox" id="optionBrooklynOktoberfest"/>
+                            <label class="form-check-label" for="optionBrooklynOktoberfest">Brooklyn Oktoberfest</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/seasonals/brooklyn-oktoberfest/" target="_blank">
+                            <img
+                                src="./img/Oktoberfest-12oz-LR-366x600-e1425e7.png"
+                                alt="Brooklyn Oktoberfest"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-palenque" type="checkbox" id="optionBrooklynPalenque"/>
+                            <label class="form-check-label" for="optionBrooklynPalenque">Brooklyn Palenque</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/palenque/" target="_blank">
+                            <img
+                                src="./img/Palenque-LR-307x600-f81c34d.png"
+                                alt="Brooklyn Palenque"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="pulp-art-hazy-ipa" type="checkbox" id="optionPulpArtHazyIPA"/>
+                            <label class="form-check-label" for="optionPulpArtHazyIPA">Pulp Art Hazy IPA</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/year-round/pulp-art-hazy-ipa/" target="_blank">
+                            <img
+                                src="./img/PulpArt-2020-pint-can_LR-451x601-3a95a2d.png"
+                                alt="Pulp Art Hazy IPA"
+                            >
+                        </a>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="post-road-pumpkin-ale" type="checkbox" id="optionPostRoadPumpkinAle"/>
+                            <label class="form-check-label" for="optionPostRoadPumpkinAle">Post Road Pumpkin Ale</label>
+                        </div>
                         <a href="https://brooklynbrewery.com/brooklyn-beers/seasonals/post-road-pumpkin-ale/" target="_blank">
                             <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/10/beer-1@2x-6-828x1024.jpg"
+                                src="./img/Pumpkin-12oz-LR-366x600-eba0ee3.png"
                                 alt="Post Road Pumpkin Ale"
-                                class="emblem"
-                                width="632"
-                                height="828"
                             >
                         </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="brooklyn-winter-lager"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Brooklyn Winter Lager
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/seasonals/brooklyn-winter-lager/" target="_blank">
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="refraction" type="checkbox" id="optionRefraction"/>
+                            <label class="form-check-label" for="optionRefraction">Refraction</label>
+                        </div>
+                        <img
+                            src="./img/Refraction-BigBottle-rendering-LR-307x600-f81c34d.png"
+                            alt="Refraction"
+                        >
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-shackmeister-ale" type="checkbox" id="optionBrooklynShackmeisterAle"/>
+                            <label class="form-check-label" for="optionBrooklynShackmeisterAle">Brooklyn Shackmeister Ale</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="sorachi-ace" type="checkbox" id="optionSorachiAce"/>
+                            <label class="form-check-label" for="optionSorachiAce">Sorachi Ace</label>
+                        </div>
+                        <img
+                            src="./img/Sorachi-12oz-LR-366x600-eba0ee3.png"
+                            alt="Sorachi Ace"
+                        >
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-summer-ale" type="checkbox" id="optionBrooklynSummerAle"/>
+                            <label class="form-check-label" for="optionBrooklynSummerAle">Brooklyn Summer Ale</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/seasonals/brooklyn-summer-ale/" target="_blank">
                             <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/10/beer-1@3x-1-828x1024.jpg"
-                                alt="Brooklyn Winter Lager"
-                                class="emblem"
-                                width="632"
-                                height="828"
+                                src="./img/Summer-12oz-LR-366x600-eba0ee3.png"
+                                alt="Brooklyn Summer Ale"
                             >
                         </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="brooklyn-black-ops"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Brooklyn Black Ops
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/black-ops/" target="_blank">
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="total-request-ipa" type="checkbox" id="opionTotalRequestIPA"/>
+                            <label class="form-check-label" for="opionTotalRequestIPA">Total Request IPA</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="favorite" value="brooklyn-winter-ipa" type="checkbox" id="optionBrooklynWinterIPA"/>
+                            <label class="form-check-label" for="optionBrooklynWinterIPA">Brooklyn Winter IPA</label>
+                        </div>
+                        <a href="https://brooklynbrewery.com/brooklyn-beers/seasonals/winter-ipa/" target="_blank">
                             <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/11/beer-1@2x-3-828x1024.jpg"
-                                alt="Brooklyn Black Ops"
-                                class="emblem"
-                                width="632"
-                                height="828"
+                                src="./img/WinterIPA-12ozBottle_LR-366x600-eba0ee3.png"
+                                alt="Brooklyn Winter IPA"
                             >
                         </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="hand&seal"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Hand & Seal
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/hand-seal/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/11/hand-seal-beer-1@2x-828x1024.jpg"
-                                alt="Hand & Seal"
-                                class="emblem"
-                                width="632"
-                                height="828"
-                            >
-                        </a>
-                    </span>
-                    <span class="option">
-                        <label>
-                            <input
-                                name="favorite"
-                                value="cloaking-device"
-                                type="checkbox"
-                                class="checkbox-group"
-                            />Cloaking Device
-                        </label>
-                        <a href="https://brooklynbrewery.com/brooklyn-beers/limited/cloaking-device/" target="_blank">
-                            <img
-                                src="https://brooklynbrewery.com/wp-content/uploads/2019/11/cloaking-device-beer-1@2x-828x1024.jpg"
-                                alt="Cloaking Device"
-                                class="emblem"
-                                width="632"
-                                height="828"
-                            >
-                        </a>
-                    </span>
+                    </div>
                 </div>
-                <div class="group">
-                    <p>Would you recommend Brooklyn Brewery products to your friends?</p>
-                    <label class="label-class">
+                <p>Would you recommend Brooklyn Brewery products to your friends?</p>
+                <div class="mb-3">
+                    <div class="form-check">
                         <input
+                            class="form-check-input"
+                            type="radio"
                             name="user-recommendation"
+                            id="radio1"
                             value="yes"
-                            type="radio"
-                            class="input-radio"
                             checked
-                        />Yes
-                    </label>
-                    <label class="label-class">
+                        >
+                        <label class="form-check-label" for="radio1">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
                         <input
+                            class="form-check-input"
+                            type="radio"
                             name="user-recommendation"
+                            id="radio2"
                             value="no"
-                            type="radio"
-                            class="input-radio"
-                        />No
-                    </label>
-                    <label class="label-class">
+                        >
+                        <label class="form-check-label" for="radio2">
+                            No
+                        </label>
+                    </div>
+                    <div class="form-check">
                         <input
-                            name="user-recommendation"
-                            value="maybe"
+                            class="form-check-input"
                             type="radio"
-                            class="input-radio"
-                        />Maybe
-                    </label>
+                            name="user-recommendation"
+                            id="radio3"
+                            value="maybe"
+                        >
+                        <label class="form-check-label" for="radio3">
+                            Maybe
+                        </label>
+                    </div>
                 </div>
-                <div class="group">
-                    <p>Any and all comments are appreciated!</p>
-                    <textarea class="textarea" placeholder="Enter your comment here..."></textarea>
+                <div class="mb-3">
+                    <label for="userInput" class="form-label">Any and all comments are appreciated!</label>
+                    <textarea class="form-control" id="userInput" rows="3" placeholder="Enter your comment here..."></textarea>
                 </div>
-                <div class="group">
-                    <button type="submit" id="submit">Submit</button>
-                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
             </form>
         </main>
     </body>
