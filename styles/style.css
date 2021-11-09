@@ -1,0 +1,78 @@
+@font-face {
+  font-family: Cyclone;
+  src: url("../fonts/Cyclone Background.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url("../fonts/Bitstream - FuturaBT Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Futura Medium";
+  src: url("../fonts/Bitstream - FuturaBT Medium.otf") format("opentype");
+}
+
+body {
+  background-color: #009844;
+}
+
+label {
+  font-family: "Futura Medium", Calibri;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+input {
+  font-family: "Futura Medium", Calibri;
+  font-size: 1.25rem;
+}
+
+select, textarea, button {
+  font-family: "Futura Medium", Calibri;
+}
+
+h1 {
+  font-family: Cyclone, Impact;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 12em;
+  line-height: .9em;
+}
+
+h2 {
+  font-family: "Futura Bold", Calibri;
+  color: #FFFFFF;
+  font-size: 35px;
+}
+
+p {
+  font-family: "Futura Medium", Calibri;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+select {
+  cursor: pointer;
+}
+
+.option {
+  width: 25%;
+}
+
+#survey-form {
+  margin: auto;
+  width: 90%;
+  padding: 1.5rem;
+  background-color: #000000;
+}
+
+#submit {
+  width: 100%;
+}
+
+#ageHelp {
+  font-family: "Futura Medium", Calibri;
+  color: #FFFFFF;
+}
+/*# sourceMappingURL=style.css.map */
