@@ -5,6 +5,8 @@
 ![image](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![image](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
+https://brooklynbrewerysurvey.netlify.app/
+
 A accessible responsive survey form webpage.
 
 ![image](./img/img1.PNG)
@@ -31,7 +33,8 @@ For this project I decided to base the survey form on Brooklyn Brewery, a local 
 - SASS was used to increase simplicity
 - The HTML and CSS code was validated by the [W3C Markup Validation Service](https://validator.w3.org/) to ensure functionality.
 - Best practices for accessibility was used for this project, additionally the Firefox [Accessibility Inspector](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector) and the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) was also used to ensure accessibility.
-- In addition to responsiveness for large screens, responsiveness was also provided for smaller screens like smartphones with the use of the Bootstrap framework
+- In addition to responsiveness for large screens, responsiveness was also provided for smaller screens like smartphones with the use of the Bootstrap framework.
+- Deployed using Netlify
 ## Links
 - FreeCodeCamp's Responsive Web Design [certification curriculum](https://www.freecodecamp.org/learn/responsive-web-design/#responsive-web-design-projects)
 - FreeCodeCamp's Build a Survey Form [Project details](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
