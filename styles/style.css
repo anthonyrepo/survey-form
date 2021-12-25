@@ -56,6 +56,15 @@ select {
   cursor: pointer;
 }
 
+footer {
+  font-family: "Futura Medium", Calibri;
+}
+
+footer p {
+  font-size: .9rem;
+  color: palegoldenrod;
+}
+
 .option {
   width: 25%;
 }

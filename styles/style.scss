@@ -58,6 +58,13 @@ p {
 select {
     cursor: pointer;
 }
+footer {
+    @include body;
+    p {
+        font-size: .9rem;
+        color: palegoldenrod;
+    }
+}
 
 .option {
     width: 25%;
